@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Estates | Premium Real Estate</title>
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tighter text-blue-600">MODERN<span class="text-gray-800">ESTATES</span></a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+                <a href="projects.html" class="hover:text-blue-600 transition">Projects</a>
+                <a href="services.html" class="hover:text-blue-600 transition">Services</a>
+                <a href="about.html" class="hover:text-blue-600 transition">About Us</a>
+                <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl">☰</button>
+        </div>
+    </nav>
+
+            <!-- HERO SECTION (Home Page) -->
+        <section class="relative h-[90vh] flex items-center justify-center bg-gray-900 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-50 bg-[url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
+            <div class="relative z-10 text-center px-6">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">Find Your Future Home</h1>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">Discover exclusive properties in the most sought-after locations with Modern Estates.</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="projects.html" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition">View Projects</a>
+                    <a href="contact.html" class="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition">Book a Consultation</a>
+                </div>
+            </div>
+        </section>
+
+    <section class="py-20 max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-12">Completed Projects</h2>
+        <div class="grid md:grid-cols-3 gap-8 mb-20">
+            <!-- Repeat this block 3 times for Completed -->
+            <div class="group overflow-hidden rounded-xl">
+                <div class="h-64 bg-gray-200 group-hover:scale-110 transition duration-500 bg-[url('https://images.unsplash.com/photo-1600585154340-be6191dae10c?auto=format&fit=crop&q=80')] bg-cover"></div>
+                <div class="p-6 border">
+                    <h3 class="font-bold text-xl">The Skyloft Towers</h3>
+                    <p class="text-gray-500">Luxury Apartments - Nairobi</p>
+                </div>
+            </div>
+            <!-- ... -->
+        </div>
+
+        <h2 class="text-4xl font-bold mb-12">Ongoing Developments</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Repeat this block 3 times for Ongoing -->
+            <div class="relative overflow-hidden rounded-xl opacity-80">
+                <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 text-sm rounded">85% Complete</div>
+                <div class="h-64 bg-gray-300 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80')] bg-cover"></div>
+                <div class="p-6 border">
+                    <h3 class="font-bold text-xl">Emerald Business Park</h3>
+                    <p class="text-gray-500">Commercial Space - Kiambu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
