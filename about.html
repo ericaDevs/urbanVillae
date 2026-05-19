@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Estates | Premium Real Estate</title>
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-['Montserrat'] text-gray-900 bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tighter text-blue-600">MODERN<span class="text-gray-800">ESTATES</span></a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+                <a href="projects.html" class="hover:text-blue-600 transition">Projects</a>
+                <a href="services.html" class="hover:text-blue-600 transition">Services</a>
+                <a href="about.html" class="hover:text-blue-600 transition">About Us</a>
+                <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl">☰</button>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+            <!-- About Us -->
+        <section class="py-20 max-w-5xl mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold mb-8">Building Legacies Since 2010</h1>
+            <p class="text-lg text-gray-600 leading-relaxed">Modern Estates was founded on the principle of transparency. We believe finding a home is more than a transaction; it's the start of a new chapter.</p>
+        </section>
+
+        <!-- Contact -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-6 bg-white p-12 rounded-2xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+                <form class="grid gap-6">
+                    <input type="text" placeholder="Full Name" class="border p-4 rounded-lg focus:ring-2 focus:ring-blue-600 outline-none">
+                    <input type="email" placeholder="Email Address" class="border p-4 rounded-lg focus:ring-2 focus:ring-blue-600 outline-none">
+                    <textarea rows="5" placeholder="Message" class="border p-4 rounded-lg focus:ring-2 focus:ring-blue-600 outline-none"></textarea>
+                    <button class="bg-blue-600 text-white py-4 rounded-lg font-bold hover:bg-blue-700">Send Message</button>
+                </form>
+                <div class="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between text-gray-600">
+                    <p>📍 Nairobi, Kenya - CBD Towers</p>
+                    <p>📞 +254 700 000 000</p>
+                    <p>✉️ hello@modernestates.co.ke</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p>&copy; 2026 Modern Estates. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

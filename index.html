@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Estates | Premium Real Estate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-['Montserrat'] text-gray-900 bg-white">
+
+    <header class="h-screen">
+        <!-- Navigation -->
+        <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold tracking-tighter text-blue-600">
+                    <img src="https://i1-c.pinimg.com/736x/f0/e4/54/f0e454841ccbc974f8f496b0faef3aaa.jpg" alt="Logo" class="w-22 h-14 inline-block mr-2 rounded-2xl object-cover">
+                </a>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+                    <a href="projects.html" class="hover:text-blue-600 transition">Projects</a>
+                    <a href="services.html" class="hover:text-blue-600 transition">Services</a>
+                    <a href="about.html" class="hover:text-blue-600 transition">About Us</a>
+                    <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl">☰</button>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION (Home Page) -->
+        <section class="h-full relative flex items-center justify-center bg-gray-900 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-50 bg-[url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
+            <div class="relative z-10 text-center px-6">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">Find Your Future Home</h1>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">Discover exclusive properties in the most sought-after locations with Modern Estates.</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="projects.html" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition">View Projects</a>
+                    <a href="contact.html" class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-lg font-semibold transition">Book a Consultation</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <section class="flex flex-col align-center py-12 px-4 -pb-2 -mt-20 floating-cards">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Card 1: Luxury Living -->
+            <div class="bg-blue-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform -translate-y-8 md:-translate-y-12">
+            <div class="mb-5 text-blue-500">
+                <!-- Luxury Living Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-14 h-14">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.562.562 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.98 20.53a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                </svg>
+            </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Luxury Living</h3>
+                <p class="text-gray-500 text-sm leading-relaxed max-w-xs">
+                    Elegant comfort with modern luxury and timeless design.
+                </p>
+            </div>
+
+            <!-- Card 2: City Life -->
+            <div class="bg-green-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform -translate-y-8 md:-translate-y-12">
+                <div class="mb-5 text-green-500">
+                    <!-- City Life Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-14 h-14">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M6 21V7l4-3v17M10 21v-6h4v6M14 21V9l4-2v14M4 10h2M4 14h2M4 18h2" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">City Life</h3>
+                <p class="text-gray-500 text-sm leading-relaxed max-w-xs">
+                    Vibrant urban living with easy access to amenities and cultural attractions.
+                </p>
+            </div>
+
+            <!-- Card 3: Waterfront Homes -->
+            <div class="bg-blue-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform -translate-y-8 md:-translate-y-12">
+                <div class="mb-5 text-blue-500">
+                    <!-- Waterfront Homes Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-14 h-14">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 14c2 0 3-2 5-2s3 2 5 2 3-2 5-2 3 2 5 2M3 18c2 0 3-2 5-2s3 2 5 2 3-2 5-2 3 2 5 2M12 3L4 9v3h16V9l-8-6Z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Waterfront Homes</h3>
+                <p class="text-gray-500 text-sm leading-relaxed max-w-xs">
+                    Stunning homes with breathtaking waterfront views and serenity.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <main class="">
+        <!-- ABOUT US -->
+        <section class="bg-green-50 grid md:grid-cols-2 justify-items-center align-content-center gap-2 p-8 mb-14">
+            <div class="flex p-0 flex-col items-center justify-center md:p-6 mb-2">
+                <img class="w-full object-cover rounded-lg" src="https://i.pinimg.com/736x/e4/5a/2f/e45a2f763a23d23edba352d9a3141386.jpg" alt="Modern Living">
+            </div>
+
+            <div class="flex flex-col justify-start items-start text-left md:p-6">
+                <h2 class="text-blue-800 text-3xl font-extrabold mb-2">Redefining Modern Living</h2>
+                <p>We create exceptional spaces designed for comfort, innovation, and long-term value through modern real estate solutions. Our commitment is to deliver premium residential and commercial properties that combine elegant design, strategic locations, and smart living experiences.</p>
+
+                <div class="flex flex-col md:flex-row align-center justify-start mt-5 gap-6 w-full">
+                    <a href="contact.html" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">Get in touch Today</a>
+                    <a href="contact.html" class="inline-block text-white bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg transition">Learn More →</a>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- Services Section -->
+        <section class="relative w-full size-auto overflow-hidden pb-8">
+
+            <img src="https://i1-c.pinimg.com/736x/c7/eb/c3/c7ebc322631b7c3924f388e8b0a87a7e.jpg" alt="Luxury Real Estate" class="absolute inset-0 w-full h-full object-cover"/>
+
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-blue/50"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 h-full flex items-center">
+                
+                <!-- Left Services Container -->
+                <div class="w-full lg:w-1/2 px-6 md:px-12 lg:px-20">
+                    <div class="mt-10 p-5">
+                        <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+                            Premium Real Estate Solutions
+                        </h2>
+                        <p class="text-gray-700 mb-2">
+                            Our services are designed to meet the needs of discerning clients seeking exceptional living and investment opportunities.
+                        </p>
+                    </div>
+
+                    <!-- Services Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-green-500 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-green-600 transition duration-300">
+                            <div class="text-amber-400 text-3xl mb-4">🏡</div>
+                            <h3 class="text-white text-xl font-semibold mb-2">Property Sales</h3>
+                            <p class="text-gray-200 text-sm leading-relaxed">
+                                Luxury homes and premium investments tailored for modern living.
+                            </p>
+                        </div>
+
+                        <div class="bg-blue-500 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-blue-600 transition duration-300">
+                            <div class="text-amber-400 text-3xl mb-4">🏢</div>
+                            <h3 class="text-white text-xl font-semibold mb-2">Rentals</h3>
+                            <p class="text-gray-200 text-sm leading-relaxed">
+                                Elegant apartments and executive spaces in prime locations.
+                            </p>
+                        </div>
+
+                        <div class="bg-blue-500 hover:bg-blue-600 backdrop-blur-md border border-white/20 rounded-2xl p-6 transition duration-300">
+                            <div class="text-amber-400 text-3xl mb-4">📍</div>
+                            <h3 class="text-white text-xl font-semibold mb-2">Property Tours</h3>
+                            <p class="text-gray-200 text-sm leading-relaxed">
+                                Personalized property visits with expert real estate guidance.
+                            </p>
+                        </div>
+
+                        <div class="bg-green-500 hover:bg-green-600 backdrop-blur-md border border-white/20 rounded-2xl p-6 transition duration-300">
+                            <div class="text-amber-400 text-3xl mb-4">📈</div>
+                            <h3 class="text-white text-xl font-semibold mb-2">Investments</h3>
+                            <p class="text-gray-200 text-sm leading-relaxed">
+                                Smart opportunities for long-term growth and property value.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    
+        <!-- PROJECTS SECTION -->
+        <section class="bg-gray-50 py-12 px-4">
+            <h1 class="text-blue-700 font-bold mb-2 md:px-12 text-3xl">Featured Properties</h1>
+            <!-- <p class="md:px-12 mb-2">Experience unparalleled living with our collection of world-class accommodations. From modern urban residences to sprawling luxury villas, find your perfect escape.</p> -->
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Card 1: Sobha Heartland II Villas -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 transition hover:shadow-md">
+                    <div class="h-48 bg-gray-200 overflow-hidden">
+                        <img src="https://i.pinimg.com/736x/17/0f/ad/170fad2023f864f27ff2c7a31a57ab1b.jpg" alt="Villa" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-gray-800">Sobha Heartland II Villas</h3>
+                            <span class="flex items-center text-sm font-semibold text-gray-700">
+                                <span class="text-yellow-400 mr-1">★</span> 4.83
+                            </span>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-6">
+                        4 Bedroom Villa for Rent in Al Barsha<br>1 Villas, Al Barsha 1, Al Barsha.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-lg text-gray-900">$189</span>
+                                <span class="text-xs text-gray-400 ml-1">/ Night</span>
+                            </div>
+                            
+                            <button class="bg-blue-600 text-xs font-bold text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Mykonos Damac Lagoons -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 transition hover:shadow-md">
+                    <div class="h-48 bg-gray-200 overflow-hidden">
+                        <img src="https://i.pinimg.com/736x/4a/59/e1/4a59e15f96367c0baed09da4845ca2e0.jpg" alt="Apartment" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-gray-800">Mykonos Damac Lagoons</h3>
+                            <span class="flex items-center text-sm font-semibold text-gray-700">
+                                <span class="text-yellow-400 mr-1">★</span> 4.67
+                            </span>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-6">
+                        5 Bedroom Apartment for Rent in<br>Belquis Residence, Palm Jumeirah.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-lg text-gray-900">$560</span>
+                                <span class="text-xs text-gray-400 ml-1">/ Night</span>
+                            </div>
+                            <button class="bg-blue-600 text-white text-xs font-bold py-2.5 px-5 rounded-lg hover:bg-blue-700 transition">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Verdana 2 Residence -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 transition hover:shadow-md">
+                    <div class="h-48 bg-gray-200 overflow-hidden">
+                        <img src="https://i.pinimg.com/1200x/1c/b3/a9/1cb3a942c95ac402373b93d61f9bdaa7.jpg" alt="Residence" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-gray-800">Verdana 2 Residence</h3>
+                            <span class="flex items-center text-sm font-semibold text-gray-700">
+                                <span class="text-yellow-400 mr-1">★</span> 4.45
+                            </span>
+                        </div>
+
+                        <p class="text-xs text-gray-400 leading-relaxed mb-6">
+                        3 Bedroom Apartment for Rent in Continental<br>Tower, Dubai Marina.
+                        </p>
+
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-lg text-gray-900">$231</span>
+                                <span class="text-xs text-gray-400 ml-1">/ Night</span>
+                            </div>
+                            
+                            <button class="bg-blue-600 text-white rounded-lg text-xs font-bold text-decoration-none px-5 py-2.5 text-gray-800 hover:bg-blue-700 transition">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Sobha Heartland II Villas -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 transition hover:shadow-md">
+                    <div class="h-48 bg-gray-200 overflow-hidden">
+                        <img src="https://i.pinimg.com/736x/13/1a/9f/131a9f6140811026bf418b3aeb1c3097.jpg" alt="Villa" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-gray-800">Sobha Heartland II Villas</h3>
+                            <span class="flex items-center text-sm font-semibold text-gray-700">
+                                <span class="text-yellow-400 mr-1">★</span> 4.83
+                            </span>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-6">
+                        4 Bedroom Villa for Rent in Al Barsha<br>1 Villas, Al Barsha 1, Al Barsha.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-lg text-gray-900">$189</span>
+                                <span class="text-xs text-gray-400 ml-1">/ Night</span>
+                            </div>
+                            
+                            <button class="bg-blue-600 text-xs font-bold text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Mykonos Damac Lagoons -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 transition hover:shadow-md">
+                    <div class="h-48 bg-gray-200 overflow-hidden">
+                        <img src="https://i.pinimg.com/736x/ba/86/6b/ba866b7ba73e06fc0e672efda16bd0f4.jpg" alt="Apartment" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-gray-800">Mykonos Damac Lagoons</h3>
+                            <span class="flex items-center text-sm font-semibold text-gray-700">
+                                <span class="text-yellow-400 mr-1">★</span> 4.67
+                            </span>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-6">
+                        5 Bedroom Apartment for Rent in<br>Belquis Residence, Palm Jumeirah.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-lg text-gray-900">$560</span>
+                                <span class="text-xs text-gray-400 ml-1">/ Night</span>
+                            </div>
+                            <button class="bg-blue-600 text-white text-xs font-bold py-2.5 px-5 rounded-lg hover:bg-blue-700 transition">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Verdana 2 Residence -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 transition hover:shadow-md">
+                    <div class="h-48 bg-gray-200 overflow-hidden">
+                        <img src="https://i.pinimg.com/736x/dc/f9/18/dcf918cd7928d9b9b8dee6916d3aabfb.jpg" alt="Residence" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-gray-800">Verdana 2 Residence</h3>
+                            <span class="flex items-center text-sm font-semibold text-gray-700">
+                                <span class="text-yellow-400 mr-1">★</span> 4.45
+                            </span>
+                        </div>
+
+                        <p class="text-xs text-gray-400 leading-relaxed mb-6">
+                        3 Bedroom Apartment for Rent in Continental<br>Tower, Dubai Marina.
+                        </p>
+
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-lg text-gray-900">$231</span>
+                                <span class="text-xs text-gray-400 ml-1">/ Night</span>
+                            </div>
+                            
+                            <button class="bg-blue-600 text-white rounded-lg text-xs font-bold text-decoration-none px-5 py-2.5 text-gray-800 hover:bg-blue-700 transition">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- OUR PROJECTS -->
+        <section class="bg-blue-50 w-full p-5 flex md:flex-column">
+            <div>
+                <section class="px-2 w-full text-left md:px-12">
+                    <h1 class="text-3xl text-blue-700 font-bold mb-2">Our Projects</h1>
+                    <p class="mb-2">Explore our latest developments and ongoing construction projects.</p>
+                    <span class="flex items-center justify-start gap-5 w-full mb-2">
+                        <button id="completed" class="bg-blue-600 text-white rounded-lg px-8 py-4 hover:bg-blue-700 transition md:px-4 py-2">Completed Projects</button>
+                        <button id="onGoing" class="bg-green-500 rounded-lg text-white px-8 py-4 hover:bg-green-600 transition md:px-4 py-2">On-going Projects</button>
+                    </span>
+                </section>
+
+                <section id="displayScreen" class="w-full h-screen overflow-hidden">
+                    <div id="displayComplete" class="grid p-2 md:grid-cols-2 gap-6 p-12 bg-green-50 transition-all duration-500 ease-out transformation">
+                        <div class="mb-1 md:p-4 object-cover">
+                            <img src="https://i1-c.pinimg.com/1200x/7a/2f/31/7a2f318978bf97a18276955259574edb.jpg" alt="Project One" class="rounded-lg">
+                        </div>
+
+                        <div class="p-2 md:p-12 grid grid-cols-1 gap-4">
+                            <div>
+                                <h2 class="text-2xl font-bold text-gray-800 mb-2">Urbans Residential</h2>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Explore our successfully delivered developments designed with modern architecture, premium finishes, and exceptional attention to detail. Each completed project reflects our commitment to quality, trust, and creating spaces people proudly call home.
+                                </p>
+                            </div>
+
+                            <div class="grid grid-cols-2 p-2 md:grid-cols-4 gap-8 w-full">
+                                <!-- Card 1: Water Supply -->
+                                <div class="bg-blue-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
+                                    <div class="p-2 bg-green-50 rounded-full text-green-600 mb-4">
+                                        <!-- Droplet Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12 6v6l4 2" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75c-2.623 0-4.75-2.127-4.75-4.75a4.75 4.75 0 019.5 0c0 2.623-2.127 4.75-4.75 4.75z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-800">Water</h3>
+                                </div>
+
+                                <!-- Card 2: Electricity -->
+                                <div class="bg-blue-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
+                                    <div class="p-2 bg-green-50 rounded-full text-green-600 mb-4">
+                                        <!-- Bolt Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-800">Electricity</h3>
+                                </div>
+
+                                <!-- Card 3: Security -->
+                                <div class="bg-blue-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
+                                    <div class="p-2 bg-green-50 rounded-full text-green-600 mb-4">
+                                        <!-- Shield Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-800">Security</h3>
+                                </div>
+
+                                <!-- Card 4: Road Access -->
+                                <div class="bg-blue-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
+                                    <div class="p-2 bg-green-50 rounded-full text-green-600 mb-4">
+                                        <!-- Road/Map Access Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.694A1.125 1.125 0 003 6.7c0 .425.241.816.622 1.006l4.875 2.437c.317.159.69.159 1.006 0l4.994-2.497c.317-.159.69-.159 1.006 0z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-800">Road</h3>
+                                </div>
+                            </div>
+                        </div>                 
+                    </div>
+
+
+                    <div id="displayOngoing" class="grid p-2 md:grid-cols-2 gap-6 p-12 bg-blue-50 transition-all duration-500 ease-out transformation">
+                        <div class="mb-1 md:p-4 object-cover">
+                            <img src="https://i.pinimg.com/736x/c8/60/d8/c860d8caaffe8061fd0fd3b5e9bb727d.jpg" alt="Project One" class="rounded-lg">
+                        </div>
+
+                        <div class="p-2 md:p-12 grid grid-cols-1 gap-4">
+                            <div>
+                                <h2 class="text-2xl font-bold text-gray-800 mb-2">HillsTown Towers</h2>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Discover our ongoing developments crafted with modern architecture, premium finishes, and innovative design concepts. Every project in progress reflects our dedication to quality, trust, and creating exceptional living spaces built for the future.
+                                </p>
+                            </div>
+
+                            <div class="grid grid-cols-2 p-2 md:grid-cols-4 gap-8 w-full">
+                                <!-- Card 1: Water Supply -->
+                                <div class="bg-blue-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
+                                    <div class="p-2 bg-green-50 rounded-full text-green-600 mb-4">
+                                        <!-- Droplet Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12 6v6l4 2" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75c-2.623 0-4.75-2.127-4.75-4.75a4.75 4.75 0 019.5 0c0 2.623-2.127 4.75-4.75 4.75z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-800">Water</h3>
+                                </div>
+
+                                <!-- Card 2: Electricity -->
+                                <div class="bg-blue-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
+                                    <div class="p-2 bg-green-50 rounded-full text-green-600 mb-4">
+                                        <!-- Bolt Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-800">Electricity</h3>
+                                </div>
+
+                                <!-- Card 3: Security -->
+                                <div class="bg-blue-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
+                                    <div class="p-2 bg-green-50 rounded-full text-green-600 mb-4">
+                                        <!-- Shield Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-800">Security</h3>
+                                </div>
+
+                                <!-- Card 4: Road Access -->
+                                <div class="bg-blue-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
+                                    <div class="p-2 bg-green-50 rounded-full text-green-600 mb-4">
+                                        <!-- Road/Map Access Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.694A1.125 1.125 0 003 6.7c0 .425.241.816.622 1.006l4.875 2.437c.317.159.69.159 1.006 0l4.994-2.497c.317-.159.69-.159 1.006 0z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-base font-semibold text-gray-800">Road</h3>
+                                </div>
+                            </div>
+                        </div>                 
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+        <!-- CTA SECTION (Home Page) -->
+        <section class="py-20 bg-blue-600 text-white text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to start your journey?</h2>
+            <p class="mb-8 opacity-90">Our consultants are ready to guide you through the process.</p>
+            <a href="contact.html" class="bg-white text-blue-600 px-10 py-4 rounded-full font-bold uppercase tracking-wide hover:scale-105 transition transform">Get Started Now</a>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p>&copy; 2026 Modern Estates. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
