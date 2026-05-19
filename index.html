@@ -22,9 +22,37 @@
                     <a href="projects.html" class="hover:text-blue-600 transition">Projects</a>
                     <a href="services.html" class="hover:text-blue-600 transition">Services</a>
                     <a href="about.html" class="hover:text-blue-600 transition">About Us</a>
-                    <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+                    <a href="contact.html" class="hover:text-blue-600 transition">Contact Us</a>
                 </div>
-                <button id="mobile-menu-btn" class="md:hidden text-2xl">☰</button>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="text-blue-600 text-3xl z-50 relative md:hidden">☰</button>
+
+            <!-- Overlay -->
+            <div id="menu-overlay"
+                class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden z-40 transition-opacity duration-300">
+            </div>
+
+            <!-- Mobile Sidebar Menu -->
+            <div id="mobile-menu"
+                class="fixed top-0 right-[-100%] w-72 h-screen bg-white shadow-2xl z-50 transition-all duration-500 ease-in-out">
+
+                <!-- Menu Header -->
+                <div class="flex items-center justify-between p-6 border-b">
+                    <h2 class="text-2xl font-bold text-blue-600">UrbanVillae</h2>
+                    <!-- Close Button -->
+                    <button id="close-menu" class="text-3xl text-gray-700">&times;</button>
+                </div>
+
+                <!-- Menu Links -->
+                <nav class="flex flex-col p-6 space-y-6">
+                    <a href="index.html" class="text-gray-700 hover:text-green-600 text-lg font-medium transition"> Home </a>
+                    <a href="services.html" class="text-gray-700 hover:text-green-600 text-lg font-medium transition"> Services </a>
+                    <a href="about.html" class="text-gray-700 hover:text-green-600 text-lg font-medium transition"> About Us </a>
+                    <a href="projects.html" class="text-gray-700 hover:text-green-600 text-lg font-medium transition"> Projects </a>
+                    <a href="contact.html" class="text-gray-700 hover:text-green-600 text-lg font-medium transition"> Contact Us </a>
+                </nav>
+                </div>
             </div>
         </nav>
 
@@ -95,7 +123,7 @@
 
     <main class="">
         <!-- ABOUT US -->
-        <section class="bg-green-50 grid md:grid-cols-2 justify-items-center align-content-center gap-2 p-8 mb-14">
+        <section class="bg-[radial-gradient(circle,#F0FDF4_0%,#D6E0FF_87%)] grid md:grid-cols-2 justify-items-center align-content-center gap-2 p-8 mb-14">
             <div class="flex p-0 flex-col items-center justify-center md:p-6 mb-2">
                 <img class="w-full object-cover rounded-lg" src="https://i.pinimg.com/736x/e4/5a/2f/e45a2f763a23d23edba352d9a3141386.jpg" alt="Modern Living">
             </div>
@@ -359,8 +387,8 @@
                     </span>
                 </section>
 
-                <section id="displayScreen" class="w-full h-screen overflow-hidden">
-                    <div id="displayComplete" class="grid p-2 md:grid-cols-2 gap-6 p-12 bg-green-50 transition-all duration-500 ease-out transformation">
+                <section id="displayScreen" class="w-full overflow-hidden">
+                    <div id="displayComplete" class="grid p-2 md:grid-cols-2 gap-6 p-12 bg-blue-50 transition-all duration-500 ease-out transformation">
                         <div class="mb-1 md:p-4 object-cover">
                             <img src="https://i1-c.pinimg.com/1200x/7a/2f/31/7a2f318978bf97a18276955259574edb.jpg" alt="Project One" class="rounded-lg">
                         </div>
@@ -423,7 +451,7 @@
                     </div>
 
 
-                    <div id="displayOngoing" class="grid p-2 md:grid-cols-2 gap-6 p-12 bg-blue-50 transition-all duration-500 ease-out transformation">
+                    <div id="displayOngoing" class="grid p-2 md:grid-cols-2 gap-6 p-12 bg-green-50 transition-all duration-500 ease-out transformation">
                         <div class="mb-1 md:p-4 object-cover">
                             <img src="https://i.pinimg.com/736x/c8/60/d8/c860d8caaffe8061fd0fd3b5e9bb727d.jpg" alt="Project One" class="rounded-lg">
                         </div>
@@ -438,8 +466,8 @@
 
                             <div class="grid grid-cols-2 p-2 md:grid-cols-4 gap-8 w-full">
                                 <!-- Card 1: Water Supply -->
-                                <div class="bg-blue-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
-                                    <div class="p-2 bg-green-50 rounded-full text-green-600 mb-4">
+                                <div class="bg-green-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
+                                    <div class="p-2 bg-blue-50 rounded-full text-green-600 mb-4">
                                         <!-- Droplet Icon -->
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12 6v6l4 2" />
@@ -450,8 +478,8 @@
                                 </div>
 
                                 <!-- Card 2: Electricity -->
-                                <div class="bg-blue-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
-                                    <div class="p-2 bg-green-50 rounded-full text-green-600 mb-4">
+                                <div class="bg-green-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
+                                    <div class="p-2 bg-blue-50 rounded-full text-green-600 mb-4">
                                         <!-- Bolt Icon -->
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
@@ -461,8 +489,8 @@
                                 </div>
 
                                 <!-- Card 3: Security -->
-                                <div class="bg-blue-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
-                                    <div class="p-2 bg-green-50 rounded-full text-green-600 mb-4">
+                                <div class="bg-green-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
+                                    <div class="p-2 bg-blue-50 rounded-full text-green-600 mb-4">
                                         <!-- Shield Icon -->
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
@@ -472,8 +500,8 @@
                                 </div>
 
                                 <!-- Card 4: Road Access -->
-                                <div class="bg-blue-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
-                                    <div class="p-2 bg-green-50 rounded-full text-green-600 mb-4">
+                                <div class="bg-green-50 p-3 rounded-xl flex flex-col items-center text-center transition-all duration-300 md:p-6">
+                                    <div class="p-2 bg-blue-50 rounded-full text-green-600 mb-4">
                                         <!-- Road/Map Access Icon -->
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.694A1.125 1.125 0 003 6.7c0 .425.241.816.622 1.006l4.875 2.437c.317.159.69.159 1.006 0l4.994-2.497c.317-.159.69-.159 1.006 0z" />
@@ -490,17 +518,137 @@
 
 
         <!-- CTA SECTION (Home Page) -->
-        <section class="py-20 bg-blue-600 text-white text-center">
+        <section class="px-2 py-12 md:py-20 px-6 bg-blue-600 text-white text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to start your journey?</h2>
             <p class="mb-8 opacity-90">Our consultants are ready to guide you through the process.</p>
-            <a href="contact.html" class="bg-white text-blue-600 px-10 py-4 rounded-full font-bold uppercase tracking-wide hover:scale-105 transition transform">Get Started Now</a>
+            <a href="contact.html" class="bg-green-500 text-white px-10 py-4 rounded-full font-bold uppercase tracking-wide hover:bg-green-600 scale-105 transition transform">Get Started Now</a>
         </section>
     </main>
 
-    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <p>&copy; 2026 Modern Estates. All rights reserved.</p>
+
+    <footer class="">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Footer Container -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 overflow-hidden shadow-2xl">
+
+            <!-- Left Contact Section -->
+            <div class="bg-blue-50 px-8 py-12 flex flex-col justify-center space-y-8">
+                <h3 class="text-2xl font-bold mb-6">UrbanVillae Estates</h3>
+
+                <!-- Call -->
+                <div class="flex items-start gap-4">
+                <div class="bg-green-500/10 p-3 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 text-green-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                    <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-800">Call Us</h4>
+                    <p class="text-gray-500 text-sm">+254 700 333 999</p>
+                </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-start gap-4">
+                <div class="bg-blue-500/10 p-3 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 text-blue-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                    <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M16 12H8m8 0l-8 0m8 0l-8 0m14-5v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2z"/>
+                    </svg>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-800">Email Us</h4>
+                    <p class="text-gray-500 text-sm">info@urbanvillae.com</p>
+                </div>
+                </div>
+
+                <!-- Location -->
+                <div class="flex items-start gap-4">
+                <div class="bg-green-600/10 p-3 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 text-green-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                    <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/>
+                    <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-800">Visit Us</h4>
+                    <p class="text-gray-500 text-sm">
+                    Niavasha, Kenya
+                    </p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Middle + Right Section -->
+            <div class="lg:col-span-2 relative bg-green-50 text-black">
+
+                <!-- Content -->
+                <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10 px-8 py-12">
+
+                    <!-- Links -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4" text-blue-700>Important Links</h4>
+                        <ul class="space-y-3 text-black">
+                            <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+                            <li><a href="services.html" class="hover:text-blue-500 transition">Services</a></li>
+                            <li><a href="about.html" class="hover:text-blue-500 transition">About Us</a></li>
+                            <li><a href="projects.html" class="hover:text-blue-500 transition">Projects</a></li>
+                            <li><a href="contact.html" class="hover:text-blue-500 transition">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-4 text-blue-700 ">Stay Updated </h3>
+                        <p class="text-black mb-6">
+                        Subscribe to receive the latest property updates,
+                        new developments, and investment opportunities.
+                        </p>
+
+                        <!-- Input -->
+                        <form class="space-y-4">
+                            <input type="email" placeholder="Enter your email" class="w-full px-5 py-3 rounded-lg bg-blue-50 border border-blue/20 text-black placeholder-black focus:outline-none focus:ring-2 focus:ring-blue-300">
+
+                            <button type="submit" class="w-full bg-green-500 hover:bg-green-600 transition duration-300 text-white font-semibold py-3 rounded-lg shadow-lg"> Subscribe </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Bottom -->
+                <div class="relative z-10 border-t border-white/20 px-8 py-5 text-center text-sm text-black">
+                © 2026 UrbanVillae. All Rights Reserved.
+                </div>
+            </div>
+            </div>
         </div>
+
     </footer>
 
     <script src="script.js"></script>

@@ -1,9 +1,37 @@
 // Mobile Menu Toggle
 const menuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const closeMenu = document.getElementById('close-menu');
+const overlay = document.getElementById('menu-overlay');
+
+
+// Open Menu
 menuBtn?.addEventListener('click', () => {
-    alert('Mobile menu functionality would expand here!');
-    // You can implement a slide-out menu here
+
+    overlay.classList.remove('hidden');
+
+    mobileMenu.classList.remove('right-[-100%]');
+    mobileMenu.classList.add('right-0');
+
 });
+
+
+// Close Function
+function closeMobileMenu() {
+    mobileMenu.classList.remove('right-0');
+    mobileMenu.classList.add('right-[-100%]');
+
+    setTimeout(() => {
+        overlay.classList.add('hidden');
+    }, 300);
+}
+
+
+// Close Button
+closeMenu?.addEventListener('click', closeMobileMenu);
+overlay?.addEventListener('click', closeMobileMenu);
+
+
 
 // Smooth Scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
